@@ -34,7 +34,6 @@ function addParagraphs($pcontent) {
 		if (array_intersect($atag_ids, $ptag_ids)) {
 			$ad_paragraph_after = get_post_meta( $ad_id, 'ad_paragraph_after', true);
 			$url = wp_get_attachment_url( get_post_thumbnail_id($ad_id) );
-            break;
 
 	}
 
@@ -47,6 +46,7 @@ function addParagraphs($pcontent) {
     for($i=0; $i<$count; $i++) {
     	if ($i == $ad_paragraph_after) {
         	$output .= '<img src="' . $url . '">'; // slips ad url in at supplied paragraph number
+        	$output .= $parts[$i] . '</p>';
         } else {
         $output .= $parts[$i] . '</p>';
 
