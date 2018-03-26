@@ -1,0 +1,1 @@
+This is all made on from scratch on a minimal free template using a child theme. Everything inside the child theme that isnt to intialize the child theme is build specifically for the ad injector.
