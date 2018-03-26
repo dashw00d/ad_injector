@@ -159,15 +159,15 @@ class ad_injector{
 	<p>Enter additional information about your ad below</p>
 	<div class="field-container">
 		<label for="ad_paragraph_after">Paragraph for Ad to Follow (Number)</label>
-		<input type="number" name="ad_paragraph_after" id="ad_paragraph_after" value="<?php echo $ad_paragraph_after; ?>"/>
+		<input type="number" name="ad_paragraph_after" id="ad_paragraph_after" value="<?php echo $ad_paragraph_after; ?>"  required//>
 	</div>
 	<div class="field-container">
 		<label for="ad_image_width">Ad Image Width</label>
-		<input type="text" name="ad_image_width" id="ad_image_width" class="admin-datepicker" value="<?php echo $ad_image_width; ?>" required/>
+		<input type="text" name="ad_image_width" id="ad_image_width" class="admin-datepicker" value="<?php echo $ad_image_width; ?>">
 	</div>
 	<div class="field-container">
 		<label for="ad_image_height">Ad Image Height</label>
-		<input type="text" name="ad_image_height" id="ad_image_height" class="admin-datepicker" value="<?php echo $ad_image_height; ?>" required/>
+		<input type="text" name="ad_image_height" id="ad_image_height" class="admin-datepicker" value="<?php echo $ad_image_height; ?>"/>
 	</div>
 	<?php
 }
